@@ -1,2 +1,52 @@
-# instructions 
-start a project with VSC and run the main.cpp
+Instructions for Using C++ Program: Stack, Queue, and Selection Sort Operations
+Overview:
+This C++ program demonstrates the implementation of stack operations, queue operations, and the selection sort algorithm. It provides a menu-driven interface to interact with stacks, queues, and sort arrays of integers.
+
+Usage:
+Main Menu:
+
+When you run the program, you will be presented with the Main Menu:
+mathematica
+Copy code
+Main Menu
+1. Stack Operations
+2. Queue Operations
+3. Sort a List
+4. Exit
+Enter the number corresponding to the operation you want to perform and press Enter.
+Stack Operations:
+
+Choose option 1 from the main menu to perform stack operations.
+Available operations include:
+1. Push(): Push an item onto the stack.
+2. Pop(): Pop an item from the stack.
+3. isEmpty(): Check if the stack is empty.
+4. isFull(): Check if the stack is full.
+5. peek(): View the item at a specific position in the stack.
+6. count(): Count the number of items in the stack.
+7. change(): Change the value of an item at a specific position in the stack.
+8. display(): Display all items in the stack.
+9. Clear Screen: Clear the console screen (works on Windows, may need adjustment for other platforms).
+Queue Operations:
+
+Choose option 2 from the main menu to perform queue operations.
+Available operations include:
+1. Enqueue(): Add an item to the queue.
+2. Dequeue(): Remove an item from the queue.
+3. isEmpty(): Check if the queue is empty.
+4. isFull(): Check if the queue is full.
+5. count(): Count the number of items in the queue.
+6. display(): Display all items in the queue.
+7. Clear Screen: Clear the console screen (works on Windows, may need adjustment for other platforms).
+Sort a List:
+
+Choose option 3 from the main menu to sort an array of integers using the selection sort algorithm.
+Follow the prompts to enter the number of elements in the array and the elements themselves.
+The sorted array will be displayed after sorting.
+Exiting the Program:
+
+Choose option 4 from the main menu to exit the program.
+Notes:
+Ensure valid inputs are provided as per the program's prompts to avoid unexpected behavior.
+The program handles stack overflow, underflow, queue overflow, and underflow conditions.
+Use the Clear Screen option (9) to maintain a clean console interface, especially useful for repetitive operations.
