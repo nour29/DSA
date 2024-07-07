@@ -158,6 +158,7 @@ public:
     }
 
     void enqueue(int val) {
+        cin>>val;
         if (isFull()) {
             cout << "Queue Overflow" << endl;
         } else if (isEmpty()) {
@@ -167,6 +168,7 @@ public:
             rear++;
             q1[rear] = val;
         }
+       
     }
 
     int dequeue() {
@@ -337,6 +339,7 @@ int main()
             default:
                 cout << "Enter Proper Option number " << endl;
         }
+        
 
     } while (option1 != 0);
     }
