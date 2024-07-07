@@ -1,3 +1,4 @@
+
 #include <iostream>
 // C++ program for implementation of
 // selection sort
@@ -47,6 +48,9 @@ private:
 
 public:
     Stack(int n) {
+        if (n <= 0) {
+            throw invalid_argument("Size of the stack must be greater than 0.");
+        }
         cout<<"enter the size of the stack";
         cin>>n;
         size = n;
@@ -130,6 +134,9 @@ private:
 
 public:
     Queue(int n) {
+        if (n <= 0) {
+            throw invalid_argument("Size of the queue must be greater than 0.");
+        }
         size = n;
         front = -1;
         rear = -1;
@@ -206,7 +213,7 @@ int main()
     int a;
     cout << "1.Stack Operations\n2.Queue Operations\n3.Sort a List\n4.Exit\n";
     cin >> a;
-    if (a = 1){
+    if (a == 1){
         int size;
 
     Stack arr(size);
@@ -222,7 +229,7 @@ int main()
         cout << "6. count()" << endl;
         cout << "7. change()" << endl;
         cout << "8. display()" << endl;
-        cout << "9. Clear Screen" << endl << endl;
+        
 
         cin >> option;
         switch (option) {
@@ -277,7 +284,7 @@ int main()
         }
 
     } while (option != 0);}
-    else if (a=2){
+    else if (a==2){
 
     Queue q1;
     int value1, option1;
@@ -353,9 +360,3 @@ int main()
     }
     return 0;
 }
-
-
-
-
-
-
